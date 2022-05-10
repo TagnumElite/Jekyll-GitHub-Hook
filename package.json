@@ -1,26 +1,30 @@
 {
-  "name": "jekyll-github-hook",
+  "name": "github-webhook-handler",
   "version": "1.0.0",
-  "description": "A private express server to lookout for GitHub WebHooks to build jekyll sites",
+  "description": "A express.js server to handle github webhook requests and perform tasks",
   "main": "index.js",
   "scripts": {
-    "test": "chai..."
+    "start": "node index.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TagnumElite/Jekyll-GitHub-Hook.git"
+    "url": "git+https://github.com/TagnumElite/GitHub-Webhook-Handler.git"
   },
   "author": "TagnumElite <me@tagnumelite.com> (https://tagnumelite.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TagnumElite/Jekyll-GitHub-Hook/issues"
+    "url": "https://github.com/TagnumElite/GitHub-Webhook-Handler/issues"
   },
-  "homepage": "https://github.com/TagnumElite/Jekyll-GitHub-Hook#readme",
+  "homepage": "https://github.com/TagnumElite/GitHub-Webhook-Handler#readme",
   "dependencies": {
     "@octokit/core": "^3.6.0",
-    "body-parser": "^1.20.0",
     "dotenv": "^16.0.0",
     "express": "^4.18.1",
     "github-webhook-middleware": "^0.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
   }
 }

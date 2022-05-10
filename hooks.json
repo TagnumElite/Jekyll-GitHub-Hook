@@ -1,0 +1,12 @@
+[
+    {
+        "repo": "*",
+        "owner": "*",
+        "actions": {
+            "push": {
+                "dir": "/home/server/website",
+                "cmd": "bundle exec jekyll build -d '/var/www/website/html'"
+            }
+        }
+    }
+]
